@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html" >Home</a>
+          </div>
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="logo">
+            <div class="logo">
+              <a href="index.html"><img src="./images/logo.png" alt="PINBOOKS"></a>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="content-wrapper">
+        <div class="items-wrapper">
+          <div class="item-wrapper">
+              <div class="img-background" style="background-image: url(./images/Webdevelopment.jpg);"></div>
+                <div class="img-text-wrapper">
+                  <div class="logo-wrapper">
+                    <img src="./images/icons/web.png" >
+                  </div>
+                  <div class="subtitle">
+                    <a href="webdevelopment.html" style="text-decoration: none;">
+                    Web Development <br/><br/>
+                    Learn to code with free online courses, programming projects, and interview preparation for developer jobs.
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="item-wrapper">
+            <div class="img-background" style="background-image: url(./images/First-year.jpg);"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="./images/icons/icon1.png" >
+              </div>
+              <div class="subtitle">
+                <a href="firstyear.html" style="text-decoration: none;">
+                First Year <br/><br/>
+                These are the PDFs of books essential for First Year B-Tech Engineering.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item-wrapper">
+            <div class="img-background" style="background-image: url(./images/Second-year.jpg);"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="./images/icons/icon2.png" >
+              </div>
+              <div class="subtitle">
+                <a href="secondyear.html" style="text-decoration: none;">
+                Second Year <br/><br/>
+                These are the PDFs of books essential for Second Year B-Tech Computer Science Engineering.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item-wrapper">
+            <div class="img-background" style="background-image: url(./images/Third-year.jpg);"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="./images/icons/icon3.png" >
+              </div>
+              <div class="subtitle">
+                <a href="thirdyear.html" style="text-decoration: none;">
+                Third Year <br/><br/>
+                These are the PDFs of books essential for Third Year B-Tech Computer Science Engineering.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item-wrapper">
+            <div class="img-background" style="background-image: url(./images/Fourth-year.jpeg);"></div>
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <img src="./images/icons/icon4.png" >
+              </div>
+              <div class="subtitle">
+                <a href="fourthyear.html" style="text-decoration: none;">
+                Fourth Year <br/><br/>
+                These are the PDFs of books essential for Fourth Year B-Tech Computer Science Engineering.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/><br/><br/><br/><br/><br/>
+    </div>
+    <footer class="footer">      
+      <div class="footer-spacing">
+        <div class="footer-container">
+          <div class="footer-row">
+            <div class="footer-left-side">
+              <a href="about.html">About</a>
+            </div>
+            <div class="footer-right-side">
+              <div class="social">
+                <a href="https://www.linkedin.com/in/abhinav-rajesh-44b71b172/" target="_blank">
+                  <img src="./images/icons/linkedin.png" >
+                </a>
+                &nbsp;
+                <a href="https://twitter.com/AbhinavRajesh9" target="_blank">
+                  <img src="./images/icons/twitter.png" >
+                </a>
+                &nbsp;
+                <a href="https://www.instagram.com/pv._abhinav_/" target="_blank">
+                  <img src="./images/icons/instagram.png" alt="IG">
+                </a>
+                &nbsp;
+                <a href="https://github.com/AbhinavRajesh/" target="_blank">
+                  <img src="./images/icons/github.png" >
+                </a>            
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const items = document.querySelectorAll('.item-wrapper')
+    items.forEach(item => {
+      item.addEventListener('mouseover', ()=> {
+        item.childNodes[1].classList.add('img-darken');
+      })
+    item.addEventListener('mouseout', ()=> {
+        item.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
+</html>

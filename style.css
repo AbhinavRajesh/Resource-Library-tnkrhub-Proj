@@ -1,0 +1,361 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+/*LOGO*/
+.logo img {
+   height: 30px;
+}
+
+/* Body Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+/*Nav Styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper :hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+/*Content Styles*/
+
+
+
+.items-wrapper {
+   display: grid;
+   grid-template-columns: 1fr ;
+   margin-left: 36px;
+   margin-right: 36px;
+}
+
+@media (min-width: 800px) {
+    .items-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .items-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+.item-wrapper {
+    position: relative;
+    margin: 4px;
+
+}
+
+.img-background {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: small;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle a {
+    transition: 1s;
+    font-weight: 500;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle a {
+    font-weight: 500;
+    color: aqua;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(20%);
+}
+/*Footer*/
+.footer {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-color: #252525; 
+
+}
+
+.footer .footer-spacing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #252525; 
+}
+
+.footer-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.footer-row a {
+    text-decoration: none;
+}
+
+.footer-left-side {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer-left-side  a {
+    margin-right: 48px;
+    color: ghostwhite;
+    text-transform: uppercase;
+    
+}
+
+.footer-right-side {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+.social img {
+    height: 32px;
+    background-color: ghostwhite;
+    border-radius: 14%;
+}
+
+
+
+/*About*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 1200px;	
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    color: #353535;
+}
+
+.card h1 {
+    border-bottom: 1px solid #353535;
+    font-weight: 500;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.card p {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+/*Inconvenience*/
+
+.inconvenience {
+    padding: 50px;
+    color: #353535;
+    text-align: left;
+    font-size: large;
+}
+
+.inconvenience h1 {
+    border-bottom: 1px solid #353535;
+    font-weight: 500;
+}
+
+/*Viewport*/
+@media (min-width: 1200px) {
+    .footer-left-side {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .footer-right-side {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-left-side {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .footer-right-side {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer .footer-row {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 768px) {
+    .footer-container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 576px) {
+    .footer-container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .img-text-wrapper  .subtitle a {
+        color: aqua !important;
+        font-size: 12px;   
+    }
+    .img-background {
+        filter: brightness(40%);
+    }
+    .logo img {
+        height: 20px;
+    }
+    .img-text-wrapper {
+        padding-left: 75px;
+        padding-right: 75px; 
+    }
+    .card p {
+        padding-left: 45px ;
+        padding-right: 45px ;
+        margin-left:  auto;
+        margin-right:  auto;        
+    }
+    .card h1 {
+        padding-left: 45px ;
+        padding-right: 45px ;
+        margin-left: auto;
+        margin-right:  auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo img {
+        height: 15px;
+    }
+
+    .img-text-wrapper  .subtitle a {
+        font-size: 10px;    
+    }
+    .img-text-wrapper {
+        padding-left: 50px;
+        padding-right: 50px; 
+    }
+    .card p {
+        padding-left: 30px ;
+        padding-right: 30px ;
+        margin-left:  auto;
+        margin-right:  auto;
+    }
+    .card h1 {
+        padding-left: 30px ;
+        padding-right: 30px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
